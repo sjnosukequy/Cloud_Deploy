@@ -1,9 +1,9 @@
 package val.shop.model;
 
-public class Cart extends Product{
-	private int quantity;
-	
+import java.io.Serializable;
 
+public class Cart extends Product implements Serializable{
+	private int quantity;
 	
 
 	public Cart() {

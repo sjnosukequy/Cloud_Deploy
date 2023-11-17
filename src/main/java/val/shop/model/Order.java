@@ -1,6 +1,8 @@
 package val.shop.model;
 
-public class Order extends Product{
+import java.io.Serializable;
+
+public class Order extends Product implements Serializable{
 	private int orderId;
 	private int uid;
 	private int qunatity;
