@@ -32,7 +32,7 @@
 </head>
 <body style='background-color:#FFF6FA;'>
 	<%@include file="/includes/navbar.jsp"%>
-	<div class="container">
+	<div class="container" style="min-height: 83vh;">
 		<div class="card-header my-3">Orders</div>
 		<table class="table table-light" style='background-color:#FEE5E5;'>
 			<thead>
@@ -66,6 +66,6 @@
 		</table>
 	</div>
 	<%@include file="/includes/footer.jsp"%>
-            <%@include file="/includes/html/foot.html"%>
+    <%@include file="/includes/html/foot.html"%>
 </body>
 </html>

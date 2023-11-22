@@ -40,15 +40,17 @@ font-size: 25px;
 </head>
 <body style='background-color:#FFF6FA;'>
 	<%@include file="/includes/navbar.jsp"%>
-
-	<div class="container my-3">
-		<div class="d-flex py-3"><h3>Total Price: $ ${(total>0)?dcf.format(total):0}
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3> 
-                        <a class="mx-3 btn btn-danger" href="cart-check-out">Check Out</a></div>
+	<div class="container my-3" style="min-height: 80vh;">
+		<div class="d-flex py-3">
+			<h3>Total Price: $ ${(total>0)?dcf.format(total):0}
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			</h3> 
+			<a class="mx-3 btn btn-danger" href="cart-check-out">Check Out</a>
+		</div>
 		<table class="table table-light" style='background-color:#FEE5E5;'>
 			<thead>
 				<tr>
@@ -87,8 +89,8 @@ font-size: 25px;
 			</tbody>
 		</table>
 	</div>
-
 	<%@include file="/includes/footer.jsp"%>
-           <%@include file="/includes/html/foot.html"%>
+    <%@include file="/includes/html/foot.html"%>
+	
 </body>
 </html>

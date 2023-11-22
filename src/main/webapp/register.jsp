@@ -22,7 +22,7 @@
 <body style='background-color:#FFF6FA;'>
 	<%@include file="/includes/navbar.jsp"%>
 
-	<div class="container">
+	<div class="container" style="min-height: 78vh;">
 		<div class="card w-50 mx-auto my-5">
 			<div class="card-header text-center bg-danger text-white">User Register</div>
 			<div class="card-body" style='background-color:#FFDCDC;'>
@@ -47,9 +47,6 @@
 			</div>
 		</div>
 	</div>
-           <br>
-           <br>
-           <br>
 	<%@include file="/includes/footer.jsp"%>
             <%@include file="/includes/html/foot.html"%>
 </body>

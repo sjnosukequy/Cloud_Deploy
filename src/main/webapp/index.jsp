@@ -34,16 +34,18 @@ if (cart_list != null) {
 				for (Product p : products) {
 			%>
 			<div class="col-md-3 my-3">
-				<div class="card w-100">
-					<img class="card-img-top" src="<%=p.getImage() %>"
+				<div class="card w-100" style="height: 400px">
+					<img class="card-img-top" style="height: 200px; object-fit: cover;" src="<%=p.getImage() %>"
 						alt="Card image cap">
 					<div class="card-body" style='background-color:#FEE5E5;'>
 						<h5 class="card-title"><%=p.getName() %></h5>
 						<h6 class="price">Price: $<%=p.getPrice() %></h6>
 						<h6 class="category">Category: <%=p.getCategory() %></h6>
-						<div class="mt-3 d-flex justify-content-between">
-							<a class="btn btn-dark" href="add-to-cart?id=<%=p.getId()%>">Add to Cart</a> <a
-								class="btn btn-primary" href="order-now?quantity=1&id=<%=p.getId()%>">Buy Now</a>
+						<div class="mt-3 position-absolute" style="bottom: 3%;">
+							<div class="d-flex justify-content-between" style="width:110%;">
+								<a class="btn btn-dark" href="add-to-cart?id=<%=p.getId()%>">Add to Cart </a> 
+								<a class="btn btn-primary" href="order-now?quantity=1&id=<%=p.getId()%>">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
